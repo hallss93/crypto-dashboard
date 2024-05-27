@@ -11,6 +11,8 @@ import {
   CategoryScale,
 } from "chart.js";
 
+import "./CryptoChart.css";
+
 ChartJS.register(LineElement, PointElement, LinearScale, Title, CategoryScale);
 
 const CryptoChart = ({ crypto }) => {
@@ -54,15 +56,7 @@ const CryptoChart = ({ crypto }) => {
   };
 
   return (
-    <Card
-      sx={{
-        backgroundColor: "var(--secondary-bg)",
-        color: "var(--text-color)",
-        border: "1px solid var(--border-color)",
-        borderRadius: 2,
-        marginTop: 2,
-      }}
-    >
+    <Card className="crypto-chart">
       <CardContent>
         <Typography variant="h5" component="div" color="var(--primary-color)">
           {crypto} Price Chart

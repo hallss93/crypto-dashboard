@@ -1,6 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import { Card, CardContent, Typography } from "@mui/material";
+import "./CryptoCard.css";
 
 const CryptoCard = ({ crypto }) => {
   const prices = useSelector((state) => state.prices);
@@ -11,14 +12,7 @@ const CryptoCard = ({ crypto }) => {
   const percentageChange = ((currentPrice - initialPrice) / initialPrice) * 100;
 
   return (
-    <Card
-      sx={{
-        backgroundColor: "var(--secondary-bg)",
-        color: "var(--text-color)",
-        border: "1px solid var(--border-color)",
-        borderRadius: 2,
-      }}
-    >
+    <Card className="crypto-card">
       <CardContent>
         <Typography variant="h5" component="div" color="var(--primary-color)">
           {crypto}
