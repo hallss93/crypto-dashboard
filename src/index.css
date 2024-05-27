@@ -10,11 +10,23 @@ body {
 
 .app {
   display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
 }
 
-.crypto-card {
+.crypto-cards,
+.crypto-charts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  width: 100%;
+}
+
+.crypto-card,
+.crypto-chart {
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -23,7 +35,12 @@ body {
   width: 200px;
 }
 
-.crypto-card h2 {
+.crypto-chart {
+  width: 400px;
+}
+
+.crypto-card h2,
+.crypto-chart h2 {
   margin: 0 0 1rem;
 }
 
