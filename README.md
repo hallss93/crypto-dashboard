@@ -1,70 +1,69 @@
-# Getting Started with Create React App
+# Dashboard de Monitoramento de Criptomoedas
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este é um dashboard web desenvolvido em ReactJS que se conecta à API da Binance para monitorar e exibir em tempo real o último preço e a flutuação percentual dos preços de criptomoedas específicas desde que o dashboard foi aberto.
 
-## Available Scripts
+## Configuração
 
-In the project directory, you can run:
+1. **Clonar o Repositório**: Clone este repositório para o seu ambiente local usando o seguinte comando:
 
-### `npm start`
+    ```bash
+    git clone https://github.com/seu-usuario/nome-do-repositorio.git
+    ```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+2. **Instalar Dependências**: Navegue até o diretório do projeto e instale as dependências usando npm ou yarn:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+    ```bash
+    cd nome-do-repositorio
+    npm install
+    # ou
+    yarn install
+    ```
 
-### `npm test`
+3. **Configurar Variáveis de Ambiente (Opcional)**: Se necessário, configure variáveis de ambiente para a conexão com a API da Binance. Você pode criar um arquivo `.env` na raiz do projeto e definir as variáveis necessárias.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    ```plaintext
+    REACT_APP_BINANCE_API_KEY=SuaChaveDeAPI
+    REACT_APP_BINANCE_API_SECRET=SeuSegredoDeAPI
+    ```
 
-### `npm run build`
+## Execução
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Após instalar as dependências e configurar as variáveis de ambiente, você pode executar o projeto da seguinte maneira:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. **Desenvolvimento**: Para iniciar o servidor de desenvolvimento, execute o seguinte comando:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    ```bash
+    npm start
+    # ou
+    yarn start
+    ```
 
-### `npm run eject`
+    Isso iniciará o servidor de desenvolvimento e abrirá automaticamente o projeto em seu navegador padrão.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. **Produção**: Para construir o projeto para produção, execute o seguinte comando:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    ```bash
+    npm run build
+    # ou
+    yarn build
+    ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+    Isso criará uma versão otimizada do projeto na pasta `build`, que pode ser implantada em um servidor web.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Como Usar
 
-## Learn More
+Após iniciar o projeto, você poderá visualizar o dashboard no seu navegador. O dashboard exibirá o último preço em USDT e a flutuação percentual dos preços das criptomoedas Bitcoin (BTC), Ethereum (ETH), Solana (SOL) e Dogecoin (DOGE).
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Contribuindo
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Se deseja contribuir com este projeto, por favor, siga estas etapas:
 
-### Code Splitting
+1. Faça um Fork do projeto
+2. Crie uma nova branch (`git checkout -b feature/nova-feature`)
+3. Faça commit das suas alterações (`git commit -am 'Adicionando nova feature'`)
+4. Faça push para a branch (`git push origin feature/nova-feature`)
+5. Crie um novo Pull Request
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Licença
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
