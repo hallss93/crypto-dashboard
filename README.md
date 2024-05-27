@@ -7,23 +7,16 @@ Este é um dashboard web desenvolvido em ReactJS que se conecta à API da Binanc
 1. **Clonar o Repositório**: Clone este repositório para o seu ambiente local usando o seguinte comando:
 
     ```bash
-    git clone https://github.com/seu-usuario/nome-do-repositorio.git
+    git clone https://github.com/hallss93/crypto-dashboard.git
     ```
 
 2. **Instalar Dependências**: Navegue até o diretório do projeto e instale as dependências usando npm ou yarn:
 
     ```bash
-    cd nome-do-repositorio
+    cd crypto-dashboard
     npm install
     # ou
     yarn install
-    ```
-
-3. **Configurar Variáveis de Ambiente (Opcional)**: Se necessário, configure variáveis de ambiente para a conexão com a API da Binance. Você pode criar um arquivo `.env` na raiz do projeto e definir as variáveis necessárias.
-
-    ```plaintext
-    REACT_APP_BINANCE_API_KEY=SuaChaveDeAPI
-    REACT_APP_BINANCE_API_SECRET=SeuSegredoDeAPI
     ```
 
 ## Execução
