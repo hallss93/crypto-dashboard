@@ -19,7 +19,8 @@
     "redux": "^5.0.1",
     "redux-thunk": "^3.1.0",
     "web-vitals": "^2.1.4",
-    "websocket": "^1.0.35"
+    "websocket": "^1.0.35",
+    "websocket-as-promised": "^2.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
