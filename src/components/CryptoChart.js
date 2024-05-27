@@ -1,5 +1,7 @@
 import React from "react";
 import { Line } from "react-chartjs-2";
+import { useSelector } from "react-redux";
+import { Card, CardContent, Typography } from "@mui/material";
 import {
   Chart as ChartJS,
   LineElement,
@@ -8,7 +10,6 @@ import {
   Title,
   CategoryScale,
 } from "chart.js";
-import { useSelector } from "react-redux";
 
 ChartJS.register(LineElement, PointElement, LinearScale, Title, CategoryScale);
 
@@ -53,10 +54,22 @@ const CryptoChart = ({ crypto }) => {
   };
 
   return (
-    <div className="crypto-chart">
-      <h2>{crypto} Price Chart</h2>
-      <Line data={data} options={options} />
-    </div>
+    <Card
+      sx={{
+        backgroundColor: "var(--secondary-bg)",
+        color: "var(--text-color)",
+        border: "1px solid var(--border-color)",
+        borderRadius: 2,
+        marginTop: 2,
+      }}
+    >
+      <CardContent>
+        <Typography variant="h5" component="div" color="var(--primary-color)">
+          {crypto} Price Chart
+        </Typography>
+        <Line data={data} options={options} />
+      </CardContent>
+    </Card>
   );
 };
 

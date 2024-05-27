@@ -1,11 +1,22 @@
+/* Definindo variáveis de cores */
+:root {
+  --primary-bg: #12161c;
+  --secondary-bg: #1e2329;
+  --primary-color: #f0b90b;
+  --text-color: #eaecef;
+  --text-secondary-color: #848e9c;
+  --border-color: #2b3139;
+}
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  background-color: #f0f2f5;
+  min-height: 100vh;
+  background-color: var(--primary-bg);
+  color: var(--text-color);
 }
 
 .app {
@@ -13,37 +24,43 @@ body {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  padding: 1rem;
+  padding: 2rem;
 }
 
-.crypto-cards,
-.crypto-charts {
+.crypto-cards, .crypto-charts {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 2rem;
   justify-content: center;
   width: 100%;
+  max-width: 1200px;
 }
 
-.crypto-card,
-.crypto-chart {
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  padding: 1rem;
+.crypto-card, .crypto-chart {
+  background-color: var(--secondary-bg);
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 1.5rem;
   text-align: center;
-  width: 200px;
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+}
+
+.crypto-card {
+  width: 250px;
 }
 
 .crypto-chart {
-  width: 400px;
+  width: 100%;
+  max-width: 600px;
 }
 
-.crypto-card h2,
-.crypto-chart h2 {
+.crypto-card h2, .crypto-chart h2 {
   margin: 0 0 1rem;
+  color: var(--primary-color);
 }
 
 .crypto-card p {
   margin: 0.5rem 0;
+  color: var(--text-secondary-color);
 }
